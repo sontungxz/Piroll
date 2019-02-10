@@ -1,0 +1,214 @@
+@font-face {
+  font-family: mont;
+  src: url("./Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: nunito;
+  src: url("./Nunito_Sans/NunitoSans-Regular.ttf");
+}
+@font-face {
+  font-family: work;
+  src: url("./Work_Sans/WorkSans-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: mont;
+}
+
+/* This is header css */
+.tung-header {
+  height: 100px;
+  padding: 0 7%;
+  font-size: 12px;
+}
+.tung-header .logo {
+  float: left;
+  padding: 38px 0 37px;
+}
+.tung-header .logo img {
+  display: block;
+}
+.tung-header .nav li {
+  display: block;
+  float: right;
+  line-height: 100px;
+  margin-left: 30px;
+}
+.tung-header .nav a {
+  text-decoration: none;
+  color: rgb(25, 25, 25);
+}
+.tung-header .nav li:last-child a {
+  color: rgb(159, 227, 224);
+}
+
+/* This is home page css */
+
+.tung-home-uiux {
+  background-color: rgb(246, 246, 246);
+  height: 313px;
+  padding-top: 65px;
+}
+.tung-home-uiux .tung-home-text {
+  max-width: 520px;
+  text-align: center;
+  margin: 0 auto;
+}
+.tung-home-uiux .tung-home-text h1 {
+  font-size: 38px;
+  font-family: mont;
+  line-height: 250%;
+}
+.tung-home-uiux .tung-home-text p {
+  font-family: nunito;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(120, 120, 120);
+}
+.tung-home-content div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tung-home-content .content div img {
+  display: inline-block;
+  width: 340px;
+  height: 300px;
+}
+.tung-home-content .content div:hover img {
+  opacity: 0.7;
+}
+/* This is Contact Info Page css */
+
+/* Contact info */
+.tung-contact-container {
+  background-color: rgb(245, 245, 245);
+  overflow: auto;
+  padding: 7%;
+}
+.tung-contact-container p {
+  font-family: nunito;
+}
+.tung-contact-container h1 {
+  font-size: 30px;
+}
+.tung-contact-container .contact-info {
+  width: 40%;
+  float: left;
+}
+.tung-contact-container .contact-info .describe {
+  width: 80%;
+}
+
+/* Form */
+.tung-form {
+  width: 60%;
+  float: left;
+}
+.tung-form input {
+  border: none;
+  margin-bottom: 25px;
+  height: 40px;
+  padding-left: 2%;
+}
+
+.tung-form span input {
+  width: 48%;
+}
+.tung-form #email {
+  float: right;
+}
+.tung-form p input {
+  width: 100%;
+}
+.tung-form textarea {
+  width: 100%;
+  height: 170px;
+  padding: 2%;
+  border: none;
+  margin-bottom: 25px;
+  font-family: nunito;
+}
+.tung-contact-container input[type="submit"] {
+  background-color: rgb(16, 201, 195);
+  width: 180px;
+  height: 54px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+/* Iframe */
+.tung-contact-container iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 80px;
+}
+
+/* This is footer css */
+.tung-footer {
+  height: 284px;
+  padding: 100px 10% 100px 7%;
+  background-color: rgb(20, 20, 20);
+  color: rgb(155, 155, 155);
+  font-family: nunito;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 24px;
+}
+
+.tung-footer h2 {
+  font-size: 18px;
+  color: white;
+  font-family: mont;
+}
+.tung-footer a {
+  text-decoration: none;
+  color: rgb(155, 155, 155);
+  font-size: 15px;
+  font-family: nunito;
+}
+.tung-footer ul {
+  list-style-type: none;
+}
+
+.tung-footer .box3 ul {
+  display: inline-block;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .tung-footer {
+    display: inline-block;
+    padding-left: 10%;
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .tung-footer > div {
+    margin: 0 30px 30px;
+    float: left;
+  }
+  .tung-footer .box3 {
+    clear: both;
+  }
+  .tung-footer .emty {
+    display: none;
+  }
+  .tung-contact-container .contact-info {
+    width: 100%;
+  }
+  .tung-form {
+    width: 100%;
+  }
+}
